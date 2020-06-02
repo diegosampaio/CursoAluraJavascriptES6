@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Title Page</title>
+        <title>Negociações</title>
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -64,9 +64,14 @@
 
 
 
-        <script src="js/index.js"></script>
-
-
-
+        <script src="./js/app/models/Negociacao.js"></script>
+        <script>
+            var n1 = new Negociacao(new Date(), 5, 700);
+            n1._quantidade = 10000000;
+            console.log(n1.data);
+            console.log(n1.quantidade);
+            console.log(n1.valor);
+            console.log(n1.volume);
+        </script>
     </body>
 </html>
